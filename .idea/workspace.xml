@@ -2,29 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="841fc794-b6b5-48ef-85e3-3cef80ce59ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -131,6 +154,7 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kQ1LmYxOVuy2gl1xAjeIpr482q" />
@@ -141,6 +165,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -152,6 +178,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Models" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -171,7 +202,8 @@
       <updated>1605617947803</updated>
       <workItem from="1605617952244" duration="39000" />
       <workItem from="1605650296148" duration="28000" />
-      <workItem from="1605650386702" duration="1795000" />
+      <workItem from="1605650386702" duration="3037000" />
+      <workItem from="1605688431793" duration="1901000" />
     </task>
     <servers />
   </component>
@@ -179,10 +211,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="141" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605660381124">
+    <state x="141" y="57" width="800" height="680" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605689270464">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="141" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1366.738@0.30.1366.738" timestamp="1605660381124" />
+    <state x="141" y="57" width="800" height="680" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1366.738@0.30.1366.738" timestamp="1605689270464" />
     <state x="855" y="30" width="476" height="738" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605660482997">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -203,9 +235,25 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="1320" height="183" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1605660389527" />
-    <state x="376" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1605650302028">
+    <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1605689188498">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="376" y="226" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1605650302028" />
+    <state width="220" height="477" key="HiddenNamespacesPopup/0.30.1366.738@0.30.1366.738" timestamp="1605689188498" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1605660993303">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.30.1366.738@0.30.1366.738" timestamp="1605660993303" />
+    <state x="881" y="165" width="268" height="471" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1605689289550">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="881" y="165" width="268" height="471" key="com.intellij.database.view.ui.DbObjectDialog/0.30.1366.738@0.30.1366.738" timestamp="1605689289550" />
+    <state x="376" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1605688443768">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="376" y="226" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1605688443768" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1605689587044">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1605689587044" />
   </component>
 </project>
