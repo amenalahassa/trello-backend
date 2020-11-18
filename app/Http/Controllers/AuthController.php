@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
+use App\Models\User;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -25,7 +25,9 @@ class AuthController extends Controller
         $credentials = $request->only('email', 'password');
 
         if (Auth::attempt($credentials)) {
-            return response()->json(Auth::user(),  200);
+            $user = Auth::user();
+            $token = $user->createToken('token-name');
+            return response()->json(['token' => $token->plainTextToken ],  200);
         }
 
         throw ValidationException::withMessages([
@@ -37,7 +39,7 @@ class AuthController extends Controller
     protected function logout()
     {
         Auth::logout();
-        return response()->json([], 201);
+        return response()->json([], 204);
     }
 
     protected function register(Request $request)
@@ -49,10 +51,10 @@ class AuthController extends Controller
         ])->validate();
 
         event(new Registered($user = $this->create($request->all())));
-
         Auth::guard()->login($user);
+        $token = $user->createToken('token-name');
 
-        return response()->json($user, 200);
+        return response()->json(['token' => $token->plainTextToken ], 200);
     }
 
     protected function create(array $data)
