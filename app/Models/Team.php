@@ -20,4 +20,10 @@ class Team extends Model
         return $this->hasMany('App\Models\MemberTeam');
     }
 
+    const Category = [
+        'W-IT-S' =>  'Websites, IT & Sotware',
+        'WC' => 'Writing & Content',
+        'D-M&A' => 'Design, Media & Architecture',
+    ];
+
 }
