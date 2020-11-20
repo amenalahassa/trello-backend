@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="841fc794-b6b5-48ef-85e3-3cef80ce59ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Team.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Team.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_19_004659_create_teams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_19_004659_create_teams_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,7 +203,8 @@
       <workItem from="1605650296148" duration="28000" />
       <workItem from="1605650386702" duration="3037000" />
       <workItem from="1605688431793" duration="1901000" />
-      <workItem from="1605700778745" duration="14158000" />
+      <workItem from="1605700778745" duration="20163000" />
+      <workItem from="1605830446028" duration="384000" />
     </task>
     <servers />
   </component>
@@ -239,18 +240,18 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="220" height="477" key="HiddenNamespacesPopup/0.30.1366.738@0.30.1366.738" timestamp="1605689188498" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1605740028987">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1605793780572">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.30.1366.738@0.30.1366.738" timestamp="1605740028987" />
+    <state width="498" height="446" key="SwitcherDM/0.30.1366.738@0.30.1366.738" timestamp="1605793780572" />
     <state x="881" y="165" width="268" height="471" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1605689289550">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="881" y="165" width="268" height="471" key="com.intellij.database.view.ui.DbObjectDialog/0.30.1366.738@0.30.1366.738" timestamp="1605689289550" />
-    <state x="376" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1605700777733">
+    <state x="376" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1605830488089">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="376" y="226" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1605700777733" />
+    <state x="376" y="226" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1605830488089" />
     <state x="347" y="176" key="run.anything.popup" timestamp="1605701650436">
       <screen x="0" y="30" width="1366" height="738" />
     </state>

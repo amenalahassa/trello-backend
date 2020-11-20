@@ -18,15 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->group(function () {
 
-    Route::get('/hasTeam', function (Request $request) {
-        $teams = Auth::user()->teams;
-        $hasteam = false;
-        if (count($teams) > 0)
-        {
-            $hasteam = true;
-        }
-        return response()->json(['userHasTeam' => $hasteam], 200);
-    });
+    Route::get('/hasTeam', 'AboutUserController@ifUerHasTeam');
 
 
 
