@@ -20,6 +20,11 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::get('/hasTeam', 'AboutUserController@ifUerHasTeam');
 
+    Route::prefix('/save')->group(function (){
+        Route::post('/team', 'AboutUserController@saveTeam');
+        Route::post('/member', 'AboutUserController@saveMember');
+    });
+
 
 
 });

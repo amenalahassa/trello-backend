@@ -18,7 +18,7 @@ class CreateTeamsTable extends Migration
             $table->string('name');
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->string('secteur');
-            $table->boolean('access');
+            $table->boolean('access')->default(false);
             $table->timestamps();
         });
     }
