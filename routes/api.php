@@ -25,12 +25,12 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::post('/member', 'AboutUserController@saveMember');
     });
 
-
     Route::prefix('/ressources')->group(function () {
         Route::get('/category', function () {
             return response()->json(array_map('getObjectFromArray', array_keys(\App\Models\Team::Category) ,  array_values(\App\Models\Team::Category)), 200);
         });
     });
+
 
 });
 

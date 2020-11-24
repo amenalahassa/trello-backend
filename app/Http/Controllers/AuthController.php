@@ -27,7 +27,8 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             $user = Auth::user();
             $token = $user->createToken('token-name');
-            return response()->json(['token' => $token->plainTextToken ],  200);
+            $teams = $user->teams;
+            return response()->json(['token' => $token->plainTextToken, 'ifHasTeam'=> count($teams) > 0 ? true : false],  200);
         }
 
         throw ValidationException::withMessages([
@@ -53,8 +54,8 @@ class AuthController extends Controller
         event(new Registered($user = $this->create($request->all())));
         Auth::guard()->login($user);
         $token = $user->createToken('token-name');
-
-        return response()->json(['token' => $token->plainTextToken ], 200);
+        $teams = $user->teams;
+        return response()->json(['token' => $token->plainTextToken, 'ifHasTeam'=> count($teams) > 0 ? true : false ], 200);
     }
 
     protected function create(array $data)
