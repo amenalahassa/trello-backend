@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Invitations;
 use App\Models\MemberTeam;
 use App\Models\Team;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -38,13 +40,28 @@ class AboutUserController extends Controller
         $user->fill(['team_id' => $request->team_id, 'user_email' => Auth::user()->email, 'admin' => true]);
         $user->save();
 
-//        Todo : Find a solution for members don't have a account
-
         foreach ($request->members as $member)
         {
-            $new = new MemberTeam;
-            $new->fill(['team_id' => $request->team_id, 'user_email' => $member]);
-            $new->save();
+            $ifExistUser = User::where('email', $member)->get();
+            if (count($ifExistUser) > 0)
+            {
+                $new = new MemberTeam;
+                $new->fill([
+                    'team_id' => $request->team_id,
+                    'user_email' => $member]
+                );
+                $new->save();
+            }
+            else
+            {
+                $new = new Invitations;
+                $new->fill([
+                    'team_id' => $request->team_id,
+                    'user_id' => Auth::id(),
+                    'to_email' => $member,
+                    ]);
+                $new->save();
+            }
         }
 
         return response()->json([], 204);

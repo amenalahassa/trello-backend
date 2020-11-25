@@ -10,7 +10,7 @@ class Team extends Model
         'secteur', 'name'
    ];
 
-    protected $withCount = ['user'];
+    protected $withCount = ['boards','user'];
 
 //    Todo : Complete the list of category
     const Category = [

@@ -16,6 +16,7 @@ class CreateInvitationsTable extends Migration
         Schema::create('invitations', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('team_id')->constrained()->cascadeOnDelete();
             $table->string('to_email');
             $table->boolean('receive')->default(false);
             $table->string('slug')->nullable();

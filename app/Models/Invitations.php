@@ -10,7 +10,7 @@ class Invitations extends Model
 //    Todo : Find a way to send invitations
 
     protected $fillable = [
-        'from_id', 'to_email', 'receive', 'slug'
+        'user_id', 'to_email', 'receive', 'slug', 'team_id'
     ];
 
 }
