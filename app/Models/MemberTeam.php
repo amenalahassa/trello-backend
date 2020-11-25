@@ -7,11 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class MemberTeam extends Model
 {
     protected $fillable = [
-        'team_id', 'active', 'email'
+        'team_id', 'user_email', 'active', 'admin'
     ];
 
-    public function team ()
-    {
-        return $this->belongsTo('App\Models\Team');
-    }
 }

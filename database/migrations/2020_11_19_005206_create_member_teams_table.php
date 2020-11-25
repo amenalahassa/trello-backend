@@ -16,8 +16,10 @@ class CreateMemberTeamsTable extends Migration
         Schema::create('member_teams', function (Blueprint $table) {
             $table->id();
             $table->foreignId('team_id')->constrained()->cascadeOnDelete();
-            $table->string('email');
+            $table->string('user_email')->index();
+            $table->foreign('user_email')->references('email')->on('users')->cascadeOnDelete();
             $table->boolean('active')->nullable()->default(false);
+            $table->boolean('admin')->default(false);
             $table->timestamps();
         });
     }

@@ -38,8 +38,15 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    protected $with = ['teams', 'boards'];
+
     public function teams ()
     {
-        return $this->hasMany('App\Models\Team');
+        return $this->belongsToMany('App\Models\Team', 'member_teams', 'user_email', 'team_id', 'email', 'id')->withPivot('admin')->withTimestamps();
+    }
+
+    public function boards()
+    {
+        return $this->morphMany('App\Models\Boards', 'ownable');
     }
 }

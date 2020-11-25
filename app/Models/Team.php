@@ -7,23 +7,29 @@ use Illuminate\Database\Eloquent\Model;
 class Team extends Model
 {
    protected $fillable = [
-       'user_id', 'secteur', 'access', 'name'
+        'secteur', 'name'
    ];
 
-    public function user ()
-    {
-        return $this->belongsTo('App\Models\User');
-    }
+    protected $withCount = ['user'];
 
-    public function members ()
-    {
-        return $this->hasMany('App\Models\MemberTeam');
-    }
-
+//    Todo : Complete the list of category
     const Category = [
         'W-IT-S' =>  'Websites, IT & Sotware',
         'WC' => 'Writing & Content',
         'D-M&A' => 'Design, Media & Architecture',
     ];
+
+    protected $with = ['boards'];
+
+    public function boards()
+    {
+        return $this->morphMany('App\Models\Boards', 'ownable');
+    }
+
+    public function user ()
+    {
+        return $this->belongsToMany('App\Models\User', 'member_teams', 'team_id', 'user_email', 'id', 'email')->withPivot('admin')->withTimestamps();
+    }
+
 
 }
