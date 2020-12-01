@@ -23,10 +23,11 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::prefix('/save')->group(function (){
         Route::post('/team', 'AboutUserController@saveTeam');
         Route::post('/member', 'AboutUserController@saveMember');
+        Route::post('/board', 'AboutUserController@saveBoard');
     });
 
-    Route::prefix('/user')->group(function () {
-        Route::get('/info', 'AboutUserController@show');
+    Route::prefix('/dashboard')->group(function () {
+        Route::get('/info', 'AboutUserController@show')->name('about.dashboard');
     });
 
     Route::prefix('/ressources')->group(function () {

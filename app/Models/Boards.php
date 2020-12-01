@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Boards extends Model
 {
     protected $fillable = [
-        'name', 'image', 'ownable'
+        'name', 'image', 'ownable_type', 'ownable_id',
     ];
 
     public function ownable()
