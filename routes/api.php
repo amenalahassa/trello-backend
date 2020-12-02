@@ -18,22 +18,22 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->group(function () {
 
-    Route::get('/hasTeam', 'AboutUserController@ifUerHasTeam');
-
     Route::prefix('/save')->group(function (){
-        Route::post('/team', 'AboutUserController@saveTeam');
-        Route::post('/member', 'AboutUserController@saveMember');
-        Route::post('/board', 'AboutUserController@saveBoard');
+        Route::post('/team', 'TeamController@save');
+        Route::post('/member', 'MemberController@saveFirstMembersOfFirstTeam');
     });
 
     Route::prefix('/dashboard')->group(function () {
-        Route::get('/info', 'AboutUserController@show')->name('about.dashboard');
+        Route::get('/info', 'UserController@show')->name('dashboard.show');
+        Route::prefix('/save')->group(function () {
+            Route::post('/team', 'TeamController@save');
+            Route::post('/member', 'MemberController@saveMembersOfOthersTeams');
+            Route::post('/board', 'BoardController@save');
+        });
     });
 
     Route::prefix('/ressources')->group(function () {
-        Route::get('/category', function () {
-            return response()->json(array_map('getObjectFromArray', array_keys(\App\Models\Team::Category) ,  array_values(\App\Models\Team::Category)), 200);
-        });
+        Route::get('/category', 'FrontEndController@getAllCategoryList');
     });
 
 

@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="841fc794-b6b5-48ef-85e3-3cef80ce59ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AboutUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AboutUserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Boards.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Boards.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AboutUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -221,7 +220,8 @@
       <workItem from="1606353050426" duration="9438000" />
       <workItem from="1606468283914" duration="32000" />
       <workItem from="1606739793779" duration="7186000" />
-      <workItem from="1606783585276" duration="2477000" />
+      <workItem from="1606783585276" duration="6861000" />
+      <workItem from="1606851690568" duration="8082000" />
     </task>
     <servers />
   </component>
@@ -233,14 +233,14 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="141" y="57" width="800" height="680" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1366.738@0.30.1366.738" timestamp="1605689270464" />
-    <state x="855" y="30" width="476" height="738" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605660482997">
+    <state x="855" y="30" width="476" height="738" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606855890356">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="855" y="30" width="476" height="738" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.30.1366.738@0.30.1366.738" timestamp="1605660482997" />
-    <state x="416" y="157" width="524" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605832254477">
+    <state x="855" y="30" width="476" height="738" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.30.1366.738@0.30.1366.738" timestamp="1606855890356" />
+    <state x="416" y="157" width="524" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606856573638">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="416" y="157" width="524" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1366.738@0.30.1366.738" timestamp="1605832254477" />
+    <state x="416" y="157" width="524" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1366.738@0.30.1366.738" timestamp="1606856573638" />
     <state width="1320" height="183" key="GridCell.Tab.0.bottom" timestamp="1605660389528">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -261,22 +261,22 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="220" height="477" key="HiddenNamespacesPopup/0.30.1366.738@0.30.1366.738" timestamp="1605689188498" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1606755029613">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1606872922678">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.30.1366.738@0.30.1366.738" timestamp="1606755029613" />
+    <state width="498" height="446" key="SwitcherDM/0.30.1366.738@0.30.1366.738" timestamp="1606872922678" />
     <state x="881" y="165" width="268" height="471" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1605689289550">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="881" y="165" width="268" height="471" key="com.intellij.database.view.ui.DbObjectDialog/0.30.1366.738@0.30.1366.738" timestamp="1605689289550" />
-    <state x="376" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1606783583955">
+    <state x="376" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1606852917484">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="376" y="226" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1606783583955" />
-    <state x="375" y="146" width="615" height="506" key="find.popup" timestamp="1606355258145">
+    <state x="376" y="226" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1606852917484" />
+    <state x="375" y="146" width="615" height="506" key="find.popup" timestamp="1606856550330">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="375" y="146" width="615" height="506" key="find.popup/0.30.1366.738@0.30.1366.738" timestamp="1606355258145" />
+    <state x="375" y="146" width="615" height="506" key="find.popup/0.30.1366.738@0.30.1366.738" timestamp="1606856550330" />
     <state x="347" y="176" key="run.anything.popup" timestamp="1605701650436">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
