@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="841fc794-b6b5-48ef-85e3-3cef80ce59ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AboutUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MemberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MemberController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Invitations.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Invitations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Team.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Team.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -221,7 +224,8 @@
       <workItem from="1606468283914" duration="32000" />
       <workItem from="1606739793779" duration="7186000" />
       <workItem from="1606783585276" duration="6861000" />
-      <workItem from="1606851690568" duration="8082000" />
+      <workItem from="1606851690568" duration="13687000" />
+      <workItem from="1606913415465" duration="2499000" />
     </task>
     <servers />
   </component>
@@ -261,18 +265,18 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="220" height="477" key="HiddenNamespacesPopup/0.30.1366.738@0.30.1366.738" timestamp="1605689188498" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1606872922678">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1606915641786">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.30.1366.738@0.30.1366.738" timestamp="1606872922678" />
+    <state width="498" height="446" key="SwitcherDM/0.30.1366.738@0.30.1366.738" timestamp="1606915641786" />
     <state x="881" y="165" width="268" height="471" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1605689289550">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="881" y="165" width="268" height="471" key="com.intellij.database.view.ui.DbObjectDialog/0.30.1366.738@0.30.1366.738" timestamp="1605689289550" />
-    <state x="376" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1606852917484">
+    <state x="376" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1606913412841">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="376" y="226" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1606852917484" />
+    <state x="376" y="226" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1606913412841" />
     <state x="375" y="146" width="615" height="506" key="find.popup" timestamp="1606856550330">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -281,9 +285,9 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="347" y="176" key="run.anything.popup/0.30.1366.738@0.30.1366.738" timestamp="1605701650436" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1606750166375">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1606914506307">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1606750166375" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1606914506307" />
   </component>
 </project>

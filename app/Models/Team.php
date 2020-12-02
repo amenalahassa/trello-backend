@@ -10,7 +10,7 @@ class Team extends Model
         'secteur', 'name'
    ];
 
-    protected $withCount = ['boards','user'];
+    protected $withCount = ['boards','user', 'invited'];
 
 //    Todo : Complete the list of category
     const Category = [
@@ -29,6 +29,11 @@ class Team extends Model
     public function user ()
     {
         return $this->belongsToMany('App\Models\User', 'member_teams', 'team_id', 'user_email', 'id', 'email')->withPivot('admin')->withTimestamps();
+    }
+
+    public function invited()
+    {
+        return $this->hasMany('App\Models\Invitations');
     }
 
 

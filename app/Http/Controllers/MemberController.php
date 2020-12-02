@@ -13,10 +13,11 @@ class MemberController extends Controller
     private function save (Request $request)
     {
 
+//         Todo remove required rule
         $this->validateRequest($request->all(), [
             'team_id' => ['required', 'integer'],
-            "members"    => ["array"],
-            "members.*"  => ["email", "distinct"],
+            "members"    => ['required', "array"],
+            "members.*"  => ['required', "email", "distinct"],
         ]);
 
         $user = new MemberTeam;

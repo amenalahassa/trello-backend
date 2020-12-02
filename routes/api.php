@@ -42,3 +42,17 @@ Route::middleware('auth:sanctum')->group(function () {
 Route::post('/login', 'AuthController@login');
 Route::get('/logout', 'AuthController@logout');
 Route::post('/register', 'AuthController@register');
+
+
+Route::prefix('/postman')->group(function () {
+    Route::get('/login', function () {
+        Auth::loginUsingId(2);
+        return response()->json('Authenticated', 200);
+    });
+    Route::get('/logout', function () {
+        Auth::logout();
+        return response()->json('Logged Out', 200);
+    });
+
+
+});
