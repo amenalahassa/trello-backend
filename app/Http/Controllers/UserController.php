@@ -11,7 +11,7 @@ class UserController extends Controller
 {
     public function show(Request $request)
     {
-//        Todo : Add invitation people in the team member count field
+//        Todo : Send only need data, reduce withcount and other
 
         $user = Auth::user();
         return response()->json([

@@ -12,6 +12,10 @@ class Team extends Model
 
     protected $withCount = ['boards','user', 'invited'];
 
+    protected $hidden = [
+        'updated_at',
+    ];
+
 //    Todo : Complete the list of category
     const Category = [
         'W-IT-S' =>  'Websites, IT & Sotware',

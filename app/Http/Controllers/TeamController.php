@@ -21,4 +21,14 @@ class TeamController extends Controller
         return response()->json(['team_id' => $team->id], 200);
     }
 
+    public function show (Request $request)
+    {
+        $this->validateRequest($request->all(), [
+            'id' => ['required', 'integer'],
+        ]);
+
+        $team = Team::with('user', 'invited')->without('boards')->find($request->id);
+
+        return response()->json(['team' => $team], 200);
+    }
 }

@@ -30,6 +30,10 @@ Route::middleware('auth:sanctum')->group(function () {
             Route::post('/member', 'MemberController@saveMembersOfOthersTeams');
             Route::post('/board', 'BoardController@save');
         });
+
+        Route::prefix('/team')->group(function (){
+            Route::post('/about', 'TeamController@show');
+        });
     });
 
     Route::prefix('/ressources')->group(function () {
