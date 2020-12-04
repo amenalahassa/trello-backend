@@ -33,6 +33,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
         Route::prefix('/team')->group(function (){
             Route::post('/about', 'TeamController@show');
+            Route::post('/update', 'TeamController@update');
         });
     });
 

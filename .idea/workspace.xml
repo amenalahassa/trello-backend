@@ -4,8 +4,6 @@
     <list default="true" id="841fc794-b6b5-48ef-85e3-3cef80ce59ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TeamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TeamController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Team.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Team.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +222,7 @@
       <workItem from="1606739793779" duration="7186000" />
       <workItem from="1606783585276" duration="6861000" />
       <workItem from="1606851690568" duration="13687000" />
-      <workItem from="1606913415465" duration="13055000" />
+      <workItem from="1606913415465" duration="28131000" />
     </task>
     <servers />
   </component>
@@ -240,10 +238,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="855" y="30" width="476" height="738" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.30.1366.738@0.30.1366.738" timestamp="1606855890356" />
-    <state x="416" y="157" width="524" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606856573638">
+    <state x="416" y="157" width="524" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607021556658">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="416" y="157" width="524" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1366.738@0.30.1366.738" timestamp="1606856573638" />
+    <state x="416" y="157" width="524" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1366.738@0.30.1366.738" timestamp="1607021556658" />
     <state width="1320" height="183" key="GridCell.Tab.0.bottom" timestamp="1605660389528">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -264,14 +262,18 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="220" height="477" key="HiddenNamespacesPopup/0.30.1366.738@0.30.1366.738" timestamp="1605689188498" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1606943138334">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1607038749369">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.30.1366.738@0.30.1366.738" timestamp="1606943138334" />
+    <state width="498" height="446" key="SwitcherDM/0.30.1366.738@0.30.1366.738" timestamp="1607038749369" />
     <state x="881" y="165" width="268" height="471" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1605689289550">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="881" y="165" width="268" height="471" key="com.intellij.database.view.ui.DbObjectDialog/0.30.1366.738@0.30.1366.738" timestamp="1605689289550" />
+    <state x="100" y="130" width="1166" height="538" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1607052892720">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="100" y="130" width="1166" height="538" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.30.1366.738@0.30.1366.738" timestamp="1607052892720" />
     <state x="376" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1606913412841">
       <screen x="0" y="30" width="1366" height="738" />
     </state>

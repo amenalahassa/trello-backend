@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MemberTeam;
 use App\Models\Team;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class TeamController extends Controller
 {
@@ -31,4 +34,67 @@ class TeamController extends Controller
 
         return response()->json(['team' => $team], 200);
     }
+
+    public function update(Request $request)
+    {
+        $this->validateRequest($request->all(), [
+            'id' => ['required', 'integer'],
+            'name' => ['sometimes', 'required', 'string', 'max:255'],
+            'secteur' => ['sometimes', 'required', 'string', 'max:255'],
+            "members.*"  => ['sometimes', 'required', "email", "distinct"],
+        ]);
+
+        $team = Team::find($request->id);
+
+        if ($request->name !== null)
+        {
+           $team->name = $request->name;
+        }
+
+        if ($request->secteur !== null)
+        {
+            $team->secteur = $request->secteur;
+        }
+
+        if ($request->members !== null)
+        {
+            foreach ($request->members as $member)
+            {
+                $ifExistUser = User::where('email', $member)->get();
+
+                if (count($ifExistUser) > 0)
+                {
+                    $users =  $team->user()->where('email', $member)->get();
+
+                    if (count($users) > 0)
+                    {
+                        MemberTeam::where('user_email', $users[0]->email)->where('team_id', $team->id)->delete();
+                    }
+                    else {
+                        $team->user()->attach($ifExistUser[0]->id, ['user_email' => $member]);
+                    }
+                }
+                else
+                {
+                    $invited = $team->invited()->where('to_email', $member)->get();
+
+                    if (count($invited) > 0)
+                    {
+                       $invited[0]->delete();
+                    }
+                    else
+                    {
+                        $team->invited()->create([
+                            'user_id' => Auth::id(),
+                            'to_email' => $member,
+                        ]);
+                    }
+                }
+            }
+        }
+        $team->save();
+        return redirect()->route('dashboard.show');
+    }
+
+
 }
