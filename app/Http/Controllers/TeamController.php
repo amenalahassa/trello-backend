@@ -37,6 +37,7 @@ class TeamController extends Controller
 
     public function update(Request $request)
     {
+
         $this->validateRequest($request->all(), [
             'id' => ['required', 'integer'],
             'name' => ['sometimes', 'required', 'string', 'max:255'],

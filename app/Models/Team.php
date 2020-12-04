@@ -10,10 +10,10 @@ class Team extends Model
         'secteur', 'name'
    ];
 
-    protected $withCount = ['boards','user', 'invited'];
+    protected $withCount = ['user', 'invited'];
 
     protected $hidden = [
-        'updated_at',
+        'updated_at', 'created_at',
     ];
 
 //    Todo : Complete the list of category

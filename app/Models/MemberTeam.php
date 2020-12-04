@@ -10,4 +10,10 @@ class MemberTeam extends Model
         'team_id', 'user_email', 'active', 'admin'
     ];
 
+
+    protected $hidden = [
+        'updated_at', 'created_at',
+    ];
+
+
 }

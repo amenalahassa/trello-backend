@@ -13,6 +13,12 @@ class Invitations extends Model
         'user_id', 'to_email', 'receive', 'slug', 'team_id'
     ];
 
+
+    protected $hidden = [
+        'updated_at', 'created_at',
+    ];
+
+
     public function team ()
     {
         return $this->belongsTo('App\Models\Team');

@@ -40,6 +40,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::prefix('/ressources')->group(function () {
         Route::get('/category', 'FrontEndController@getAllCategoryList');
+        Route::get('/board/backgroundImage', 'FrontEndController@getBoardBackgroundImages');
     });
 
 

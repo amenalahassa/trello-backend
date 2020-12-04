@@ -10,6 +10,12 @@ class Boards extends Model
         'name', 'image', 'ownable_type', 'ownable_id',
     ];
 
+
+    protected $hidden = [
+        'updated_at', 'created_at', 'ownable_type'
+    ];
+
+
     public function ownable()
     {
         return $this->morphTo();
