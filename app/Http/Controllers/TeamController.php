@@ -96,5 +96,14 @@ class TeamController extends Controller
         return redirect()->route('dashboard.show');
     }
 
+    public function delete(Request $request)
+    {
+        $this->validateRequest($request->all(), [
+            'id' => ['required', 'integer'],
+        ]);
 
+        Team::find($request->id)->delete();
+
+        return redirect()->route('dashboard.show');
+    }
 }
