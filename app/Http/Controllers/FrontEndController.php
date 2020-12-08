@@ -39,4 +39,5 @@ class FrontEndController extends Controller
 
         return $images->toArray();
     }
+
 }

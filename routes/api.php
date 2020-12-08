@@ -36,6 +36,13 @@ Route::middleware('auth:sanctum')->group(function () {
             Route::post('/update', 'TeamController@update');
             Route::post('/delete', 'TeamController@delete');
         });
+
+        Route::prefix('/board')->group(function () {
+            Route::post('/about', 'BoardController@show');
+            Route::prefix("/update")->group(function (){
+                Route::post('/name', 'BoardController@updateName');
+            });
+        });
     });
 
     Route::prefix('/ressources')->group(function () {

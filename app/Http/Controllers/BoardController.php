@@ -37,4 +37,29 @@ class BoardController extends Controller
         $board->save();
         return redirect()->route('dashboard.show');
     }
+
+    public function updateName (Request $request)
+    {
+        $this->validateRequest($request->all(), [
+            'id' => ['required', 'integer'],
+            'name' => ['required', 'string', 'max:255'],
+        ]);
+
+        $board = Boards::find($request->id);
+        $board->name = $request->name;
+        $board->save();
+
+        return redirect()->route('dashboard.show');
+    }
+
+    public function show (Request $request)
+    {
+        $this->validateRequest($request->all(), [
+            'id' => ['required', 'integer'],
+        ]);
+
+        $board = Boards::with('ownable')->find($request->id);
+
+        return response()->json(['data'=> $board], 200);
+    }
 }

@@ -12,7 +12,7 @@ class Boards extends Model
 
 
     protected $hidden = [
-        'updated_at', 'created_at', 'ownable_type'
+        'updated_at', 'created_at',
     ];
 
 
