@@ -15,7 +15,7 @@ class GetBoardRequest extends FormRequest
      */
     public function authorize()
     {
-        $board = Boards::find($this->route('id'));
+        $board = Boards::findOrFail($this->route('id'));
         return $board && $this->user()->can('view', $board);
     }
 

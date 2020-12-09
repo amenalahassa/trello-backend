@@ -32,7 +32,7 @@ class BoardPolicy
     public function view(User $user, Boards $boards)
     {
         $canView = false;
-        $ownable = $boards->ownable();
+        $ownable = $boards->ownable;
         $ownable_type = $boards->ownable_type;
 
         if ($ownable_type === "App\Models\User")
@@ -42,11 +42,10 @@ class BoardPolicy
 
         if ($ownable_type === "App\Models\Team")
         {
-            $canView = $ownable->user()->find($user->id) === null;
+            $canView = $boards->ownable()->user()->find($user->id) === null;
         }
 
-        return $canView ? Response::allow()
-            : Response::deny('You do not own this post.');
+        return $canView ;
     }
 
     /**
