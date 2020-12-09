@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Models\Boards;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -14,8 +15,8 @@ class GetBoardRequest extends FormRequest
      */
     public function authorize()
     {
-//        $this->route()
-        return false;
+        $board = Boards::find($this->route('id'));
+        return $board && $this->user()->can('view', $board);
     }
 
     /**
@@ -26,7 +27,7 @@ class GetBoardRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'id' => ['required', 'integer'],
         ];
     }
 }

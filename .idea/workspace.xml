@@ -4,8 +4,11 @@
     <list default="true" id="841fc794-b6b5-48ef-85e3-3cef80ce59ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BoardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BoardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontEndController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontEndController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Boards.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Boards.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/GetBoardRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/GetBoardRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/BoardPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/BoardPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -230,7 +233,8 @@
       <workItem from="1607325362319" duration="1206000" />
       <workItem from="1607349016236" duration="3029000" />
       <workItem from="1607374271738" duration="1786000" />
-      <workItem from="1607416527507" duration="8853000" />
+      <workItem from="1607416527507" duration="13217000" />
+      <workItem from="1607497325913" duration="7593000" />
     </task>
     <servers />
   </component>
@@ -270,10 +274,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="220" height="477" key="HiddenNamespacesPopup/0.30.1366.738@0.30.1366.738" timestamp="1605689188498" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1607449774486">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1607509144515">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.30.1366.738@0.30.1366.738" timestamp="1607449774486" />
+    <state width="498" height="446" key="SwitcherDM/0.30.1366.738@0.30.1366.738" timestamp="1607509144515" />
     <state x="881" y="165" width="268" height="471" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1605689289550">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -282,10 +286,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="100" y="130" width="1166" height="538" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.30.1366.738@0.30.1366.738" timestamp="1607052892720" />
-    <state x="376" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1607416631147">
+    <state x="376" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1607497352519">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="376" y="226" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1607416631147" />
+    <state x="376" y="226" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1607497352519" />
     <state x="375" y="146" width="615" height="506" key="find.popup" timestamp="1606856550330">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -294,9 +298,9 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="347" y="176" key="run.anything.popup/0.30.1366.738@0.30.1366.738" timestamp="1605701650436" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1606914506307">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1607506730805">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1606914506307" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1607506730805" />
   </component>
 </project>

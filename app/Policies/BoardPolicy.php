@@ -5,6 +5,7 @@ namespace App\Policies;
 use App\Models\Boards;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
+use Illuminate\Auth\Access\Response;
 
 class BoardPolicy
 {
@@ -44,7 +45,8 @@ class BoardPolicy
             $canView = $ownable->user()->find($user->id) === null;
         }
 
-        return $canView;
+        return $canView ? Response::allow()
+            : Response::deny('You do not own this post.');
     }
 
     /**

@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\GetBoardRequest;
 use App\Models\Boards;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Resources\Boards as BoardRessource;
 
 class BoardController extends Controller
 {
@@ -52,14 +54,9 @@ class BoardController extends Controller
         return redirect()->route('dashboard.show');
     }
 
-    public function show (Request $request)
+    public function view (GetBoardRequest $request)
     {
-        $this->validateRequest($request->all(), [
-            'id' => ['required', 'integer'],
-        ]);
-
-        $board = Boards::with('ownable')->find($request->id);
-
-        return response()->json(['data'=> $board], 200);
+        $board = new BoardRessource(Boards::findOrFail($request->id));
+        return response()->json(['board'=> $board], 200);
     }
 }
