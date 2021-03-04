@@ -59,4 +59,20 @@ class BoardController extends Controller
         $board = new BoardRessource(Boards::findOrFail($request->id));
         return response()->json(['board'=> $board], 200);
     }
+
+    public function updateOwner (Request $request)
+    {
+        $this->validateRequest($request->all(), [
+            "owner"    => ["required" , "integer"],
+            "id"    => ["required" , "integer"],
+        ]);
+
+        $board = Boards::find($request->id);
+        $board->ownable_type = "App\Models\Team";
+        $board->ownable_id = $request->owner;
+        $board->save();
+
+        return redirect()->route('dashboard.show');
+
+    }
 }

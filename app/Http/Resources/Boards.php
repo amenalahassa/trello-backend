@@ -20,8 +20,8 @@ class Boards extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'image' => $this->image,
-            'ownable_type' => $this->ownable_type === "App\Models\Team" ? "Team" : "User",
-            'owner' => $this->ownable,
+            'type' => $this->ownable_type === "App\Models\Team" ? "Team" : "User",
+            'owner' => $this->ownable_type === "App\Models\Team" ? $this->ownable->load('user', 'invited') : $this->ownable ,
             'created_at' => CastDate($this->created_at),
         ];
     }

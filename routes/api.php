@@ -41,6 +41,7 @@ Route::middleware('auth:sanctum')->group(function () {
             Route::get('/about/{id}', 'BoardController@view');
             Route::prefix("/update")->group(function (){
                 Route::post('/name', 'BoardController@updateName');
+                Route::post('/owner', 'BoardController@updateOwner');
             });
         });
     });

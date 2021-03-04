@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\MemberTeam;
+use App\Models\Notifications;
 use App\Models\Team;
 use App\Models\User;
+use App\Notifications\AddMemberNotification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -72,7 +74,14 @@ class TeamController extends Controller
                         MemberTeam::where('user_email', $users[0]->email)->where('team_id', $team->id)->delete();
                     }
                     else {
-                        $team->user()->attach($ifExistUser[0]->id, ['user_email' => $member]);
+//                        $team->user()->attach($ifExistUser[0]->id, ['user_email' => $member]);
+                        $ifExistUser[0]->notify(new AddMemberNotification(Notifications::create([
+                            'type' => 'invitation_team',
+                            'for' => $team->id,
+                            'to' => $ifExistUser[0]->id,
+                            'from'=> Auth::id(),
+                            'content' => Auth::user()->name . " invite you to join " . $team->name . " team",
+                        ])));
                     }
                 }
                 else
